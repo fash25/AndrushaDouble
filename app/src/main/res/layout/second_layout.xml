@@ -4,63 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/header_title"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:layout_marginStart="16dp"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:text="Welcome to Android"-->
-    <!--        android:textSize="26sp"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="@+id/header_title1">-->
-
-    <!--    </TextView>-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/header_title1"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:layout_marginStart="16dp"-->
-    <!--        android:layout_marginTop="432dp"-->
-    <!--        android:text="We like bananas"-->
-    <!--        android:textSize="32sp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent">-->
-    <!--    </TextView>-->
-
-    <TextView
-        android:id="@+id/text"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="Android is the best"
-        android:layout_marginBottom="30dp"/>
-
-
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_weight="2"
-        android:foreground="@drawable/ic_launcher_background"
-        android:text="ABCDEF" />
-
-    <Button
-        android:id="@+id/bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="@string/bottom"
-        android:textSize="30sp" />
 </LinearLayout>
