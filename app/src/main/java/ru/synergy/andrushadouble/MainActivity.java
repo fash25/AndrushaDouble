@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
         setContentView(R.layout.second_layout);
 
-        TextView textView = (TextView) findViewById(R.id.header_title);
-        textView.setText("Hello from Java");
+//        TextView textView = (TextView) findViewById(R.id.header_title);
+//        textView.setText("Hello from Java");
 
 
 //        ConstraintLayout constraintLayout = new ConstraintLayout(this);
