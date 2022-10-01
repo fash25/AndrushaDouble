@@ -7,4 +7,5 @@
     <string name="view3">view3</string>
     <string name="todo">TODO</string>
     <string name="text_view">text_view</string>
+    <string name="view_hide1" />
 </resources>
