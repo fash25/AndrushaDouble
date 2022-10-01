@@ -2,4 +2,8 @@
     <string name="app_name">AndrushaDouble</string>
     <string name="text_is_textview">text is TextView</string>
     <string name="bottom">Bottom</string>
+    <string name="view1">view1</string>
+    <string name="view2">view2</string>
+    <string name="view3">view3</string>
+    <string name="todo">TODO</string>
 </resources>
