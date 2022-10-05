@@ -8,4 +8,6 @@
     <string name="todo">TODO</string>
     <string name="text_view">text_view</string>
     <string name="view_hide1" />
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
 </resources>
