@@ -9,14 +9,18 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CalculatorBl extends AppCompatActivity {
     private static final String LogcatTag = "CALCULATOR_ACTIVITY";
+    private static final String LifecycleTag = "LIFECYCLE";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(LifecycleTag,"I'm onCreate(), and I'm started");
         setContentView(R.layout.activity_calculator_bl);
 
         final Button calculate = (Button) findViewById(R.id.calc);
@@ -31,6 +35,46 @@ public class CalculatorBl extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LifecycleTag,"I'm onPause(), and I'm started");
+    }
+
+    public CalculatorBl() {
+        super();
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d(LifecycleTag,"I'm onResume(), and I'm started");
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LifecycleTag,"I'm onStart(), and I'm started");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LifecycleTag,"I'm onStop(), and I'm started");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LifecycleTag,"I'm onDestroy(), and I'm started");
+    }
+
     private void calculateAnswer(){
         EditText numOne =(EditText) findViewById(R.id.editTextNumber3);
         EditText numTwo =(EditText) findViewById(R.id.editTextNumber4);
