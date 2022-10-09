@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ToInfActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="357dp"
+        android:layout_marginTop="68dp"
+        android:text="TextView"
+        app:autoSizeMaxTextSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
