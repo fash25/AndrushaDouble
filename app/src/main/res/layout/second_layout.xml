@@ -94,5 +94,44 @@
                 android:layout_weight="1"
                 android:text="Hight" />
         </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+           < EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start simple" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catch" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Give it to me" />
+            <
+
+        </LinearLayout>
     </FrameLayout>
 </FrameLayout>
