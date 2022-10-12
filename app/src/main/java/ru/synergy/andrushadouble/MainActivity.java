@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -13,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity implements onClickListener {
+public class MainActivity extends Activity implements onClickListener {
 
     private static final int REQ_C = 1;
     EditText et;
@@ -29,15 +30,18 @@ public class MainActivity extends AppCompatActivity implements onClickListener {
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode){
-            case RESULT_OK:
-             //   tv.setText(data.getStringExtra("et"));
-
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        switch (requestCode){
+//            case RESULT_OK:
+//             //   tv.setText(data.getStringExtra("et"));
+//
+//                break;
+//            default:
+//                throw new IllegalStateException("Unexpected value: " + requestCode);
+//        }
+//    }
 
     public void onClick(View v){
         Intent i;
@@ -52,10 +56,10 @@ public class MainActivity extends AppCompatActivity implements onClickListener {
                 i.putExtra("et", eText);
                 startActivity(i);
                 break;
-            case R.id.button7:
-                i= new Intent(this,ComeBackActivity.class);
-                startActivityForResult(i,REQ_C);
-                break;
+//            case R.id.button7:
+//                i= new Intent(this,ComeBackActivity.class);
+//                startActivityForResult(i,REQ_C);
+//                break;
 
 
 
