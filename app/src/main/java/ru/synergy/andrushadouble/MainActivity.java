@@ -1,5 +1,9 @@
 package ru.synergy.andrushadouble;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -14,10 +18,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity implements onClickListener {
+public class MainActivity extends AppCompatActivity implements onClickListener {
 
     private static final int REQ_C = 1;
     EditText et;
+    private TextView tv;
+
+    ActivityResultLauncher<Intent> mStartActivityForResult = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    Intent intent = result.getData();
+                    tv.setText(intent.getStringExtra("tv"));
+
+                }
+            }
+    );
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -56,10 +73,10 @@ public class MainActivity extends Activity implements onClickListener {
                 i.putExtra("et", eText);
                 startActivity(i);
                 break;
-//            case R.id.button7:
-//                i= new Intent(this,ComeBackActivity.class);
-//                startActivityForResult(i,REQ_C);
-//                break;
+            case R.id.button7:
+                i= new Intent(this,ComeBackActivity.class);
+                mStartActivityForResult.launch(i);
+                break;
 
 
 

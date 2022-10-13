@@ -25,15 +25,15 @@ public class CalculatorBl extends AppCompatActivity {
 
         final Button calculate = (Button) findViewById(R.id.calc);
 
-        calculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log log = null;
-                log.d(LogcatTag,"Button have been pushed");
-
-                calculateAnswer();
-            }
-        });
+//        calculate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log log = null;
+//                log.d(LogcatTag,"Button have been pushed");
+//
+//                calculateAnswer();
+//            }
+//        });
     }
 
     @Override
@@ -91,8 +91,8 @@ public class CalculatorBl extends AppCompatActivity {
         float numone = Integer.parseInt(numOne.getText().toString());
         float numtwo = Integer.parseInt(numTwo.getText().toString());
 
-        Log.d(LogcatTag,"Successfully grabbed data from input fields");
-        Log.d(LogcatTag,"numone is: " + numone + "; "+" numtwo is: " + numtwo);
+//        Log.d(LogcatTag,"Successfully grabbed data from input fields");
+//        Log.d(LogcatTag,"numone is: " + numone + "; "+" numtwo is: " + numtwo);
 
         float solution = 0;
 
